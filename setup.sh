@@ -22,4 +22,21 @@ curl -L git.io/antigen > ~/dev/antigen.zsh
 cd ~/
 git clone git@github.com:facundoolano/emacs.d.git .emacs.d
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup toolchain install nightly
+rustup component add rls
+rustup component add rust-src
+rustup component add rustfmt
+rustup component add clippy --toolchain=nightly
 
+cd ~/dev/ && git clone https://github.com/rust-analyzer/rust-analyzer.git
+cd rust-analyzer
+cargo xtask install --server
+
+pip3 install --user isort
+pip3 install --user autopep8
+
+asdf plugin add nodejs
+asdf install nodejs lts
+asdf global nodejs lts
+npm install -g livedown
