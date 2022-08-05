@@ -4,7 +4,7 @@
 
 
 brew install vim ag aspell asdf thefuck
-brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine 
+brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine docker
 
 git config --global init.defaultBranch main
 git config --global user.name "facundo"
@@ -15,7 +15,7 @@ ssh-keygen -t ed25519 -C "facundo.olano@gmail.com"
 
 
 # assumes already cloned dotfiles repo
-ln ~/dev/facundoolano/dotfiles/.zshrc ~/.zshrc
+cp ~/dev/facundoolano/dotfiles/.zshrc ~/.zshrc
 
 curl -L git.io/antigen > ~/dev/antigen.zsh
 
