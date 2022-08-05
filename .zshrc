@@ -6,10 +6,11 @@ PS1='%n@%m $(shrink_path -f) $ '
 bindkey "^P" history-beginning-search-backward
 bindkey "^N" history-beginning-search-forward
 
-. /usr/local/opt/asdf/libexec/asdf.sh
+# . /usr/local/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/facundo/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -19,7 +20,7 @@ compinit
 autoload -U select-word-style
 select-word-style bash
 
-source /Users/facundo/dev/antigen.zsh
+source ~/dev/antigen.zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle shrink-path
