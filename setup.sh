@@ -4,7 +4,7 @@
 
 
 brew install vim ag aspell asdf thefuck
-brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine 
+brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine itsycal
 
 git config --global init.defaultBranch main
 git config --global user.name "facundo"
