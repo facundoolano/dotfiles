@@ -6,8 +6,8 @@ PS1='%n@%m $(shrink_path -f) $ '
 bindkey "^P" history-beginning-search-backward
 bindkey "^N" history-beginning-search-forward
 
-# . /usr/local/opt/asdf/libexec/asdf.sh
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. /usr/local/opt/asdf/libexec/asdf.sh
+#. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
