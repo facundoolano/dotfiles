@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
+# TODO run this script from raw github like github does and clone the repo as part of it
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
 brew install vim ag aspell asdf thefuck
-brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine docker itsycal
+brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine docker itsycal zoom
 
 git config --global init.defaultBranch main
 git config --global user.name "facundo"
