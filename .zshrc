@@ -1,5 +1,8 @@
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
+alias ed="emacsclient -c -a emacs"
+export EDITOR=ed
+
 setopt prompt_subst
 PS1='%n@%m $(shrink_path -f) $ '
 
