@@ -1,13 +1,15 @@
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
-alias ed="emacsclient -c -a emacs"
-export EDITOR=ed
+# alias ed="emacsclient -c -a emacs"
+# export EDITOR=ed
 
 setopt prompt_subst
 PS1='%n@%m $(shrink_path -f) $ '
 
 bindkey "^P" history-beginning-search-backward
 bindkey "^N" history-beginning-search-forward
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
 
 . /usr/local/opt/asdf/libexec/asdf.sh
 #. /opt/homebrew/opt/asdf/libexec/asdf.sh

@@ -3,6 +3,9 @@
 # TODO run this script from raw github like github does and clone the repo as part of it
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# allow many open files
+ulimit -n 10240
+
 
 brew install vim ag aspell asdf thefuck
 brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine docker spotify itsycal zoom
