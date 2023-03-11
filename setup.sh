@@ -17,9 +17,9 @@ git config --global user.email "facundo.olano@gmail.com"
 ssh-keygen -t ed25519 -C "facundo.olano@gmail.com"
 # Add to github
 
-
 # assumes already cloned dotfiles repo
 cp ~/dev/facundoolano/dotfiles/.zshrc ~/.zshrc
+echo "export PATH=\$HOME/bin:/usr/local/bin:\$PATH" >> ~/.zshenv
 
 curl -L git.io/antigen > ~/dev/antigen.zsh
 
