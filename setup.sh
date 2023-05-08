@@ -31,11 +31,8 @@ rustup toolchain install nightly
 rustup component add rls
 rustup component add rust-src
 rustup component add rustfmt
+rustup component add rust-analyzer
 rustup component add clippy --toolchain=nightly
-
-cd ~/dev/ && git clone https://github.com/rust-analyzer/rust-analyzer.git
-cd rust-analyzer
-cargo xtask install --server
 
 pip3 install --user isort
 pip3 install --user autopep8
