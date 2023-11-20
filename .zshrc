@@ -1,3 +1,4 @@
+HOMEBREW_NO_AUTO_UPDATE=1
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # alias ed="emacsclient -c -a emacs"
