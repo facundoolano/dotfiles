@@ -8,7 +8,7 @@ ulimit -n 10240
 
 
 brew install vim ag aspell asdf thefuck tmux
-brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs caffeine docker spotify itsycal zoom signal paintbrush discord awscli libreoffice
+brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs-mac caffeine docker spotify itsycal zoom signal paintbrush discord awscli libreoffice
 
 git config --global init.defaultBranch main
 git config --global user.name "facundo"
