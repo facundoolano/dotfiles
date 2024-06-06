@@ -7,8 +7,9 @@
 ulimit -n 10240
 
 
-brew install vim ag aspell asdf thefuck tmux
-brew install --cask firefox google-chrome slack telegram whatsapp iterm2 emacs-mac caffeine docker spotify itsycal zoom signal paintbrush discord awscli libreoffice
+brew install vim ag aspell asdf tmux go
+brew tap railwaycat/emacsmacport
+brew install --cask firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice
 
 git config --global init.defaultBranch main
 git config --global user.name "facundo"
@@ -19,7 +20,7 @@ ssh-keygen -t ed25519 -C "facundo.olano@gmail.com"
 
 # assumes already cloned dotfiles repo
 cp ~/dev/facundoolano/dotfiles/.zshrc ~/.zshrc
-echo "export PATH=\$HOME/bin:/usr/local/bin:\$PATH" >> ~/.zshenv
+cp ~/dev/facundoolano/dotfiles/.zprofile ~/.zprofile
 
 curl -L git.io/antigen > ~/dev/antigen.zsh
 
@@ -41,3 +42,6 @@ asdf plugin add nodejs
 asdf install nodejs lts
 asdf global nodejs lts
 npm install -g livedown
+
+go install golang.org/x/tools/gopls@latest
+go install -v golang.org/x/tools/cmd/godoc@latest

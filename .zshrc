@@ -1,4 +1,4 @@
-HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_AUTO_UPDATE=1
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # alias ed="emacsclient -c -a emacs"
@@ -32,5 +32,3 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle shrink-path
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
-
-eval $(thefuck --alias)
