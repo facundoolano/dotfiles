@@ -12,8 +12,8 @@ bindkey "^N" history-beginning-search-forward
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
 
-. /usr/local/opt/asdf/libexec/asdf.sh
-#. /opt/homebrew/opt/asdf/libexec/asdf.sh
+#. /usr/local/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
