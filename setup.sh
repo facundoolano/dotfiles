@@ -35,6 +35,9 @@ defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 3 # default is 2
 
+# show switcher in all displays
+defaults write com.apple.dock appswitcher-all-displays -bool true
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 . "$HOME/.cargo/env"
 rustup toolchain install nightly
