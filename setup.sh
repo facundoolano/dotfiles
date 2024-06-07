@@ -6,7 +6,6 @@
 # allow many open files
 ulimit -n 10240
 
-
 brew install vim ag aspell asdf tmux go isort autopep8
 brew tap railwaycat/emacsmacport
 brew install --cask firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice
@@ -19,8 +18,8 @@ ssh-keygen -t ed25519 -C "facundo.olano@gmail.com"
 # Add to github
 
 # assumes already cloned dotfiles repo
-cp ~/dev/facundoolano/dotfiles/.zshrc ~/.zshrc
-cp ~/dev/facundoolano/dotfiles/.zprofile ~/.zprofile
+ln -s $HOME/dev/facundoolano/dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/dev/facundoolano/dotfiles/.zprofile $HOME/.zprofile
 
 curl -L git.io/antigen > ~/dev/antigen.zsh
 
