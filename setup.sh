@@ -6,9 +6,13 @@
 # allow many open files
 ulimit -n 10240
 
-brew install vim ag aspell asdf tmux go isort autopep8
+brew install vim ag aspell asdf tmux go isort autopep8 jq
 brew tap railwaycat/emacsmacport
-brew install --cask firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice
+brew install --cask firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice calibre
+
+# FIXME assuming M1 here, check arch instead
+softwareupdate --install-rosetta
+arch -arm64 brew install wkhtmltopdf
 
 git config --global init.defaultBranch main
 git config --global user.name "facundo"
