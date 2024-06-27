@@ -10,6 +10,10 @@ brew install vim ag aspell asdf tmux go isort autopep8 jq
 brew tap railwaycat/emacsmacport
 brew install --cask firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice calibre
 
+# install and link java
+brew install openjdk
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 # FIXME assuming M1 here, check arch instead
 softwareupdate --install-rosetta
 arch -arm64 brew install wkhtmltopdf
