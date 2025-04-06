@@ -7,8 +7,7 @@
 ulimit -n 10240
 
 brew install vim ag aspell asdf tmux go isort autopep8 jq
-brew tap railwaycat/emacsmacport
-brew install --cask firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice calibre
+brew install --cask emacs firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice calibre vlc qbittorrent
 
 # install and link java
 brew install openjdk
