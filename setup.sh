@@ -6,8 +6,12 @@
 # allow many open files
 ulimit -n 10240
 
-brew install vim ag aspell asdf tmux go isort autopep8 jq
-brew install --cask emacs firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice calibre vlc qbittorrent
+brew install vim ag aspell asdf tmux go isort autopep8 jq ripgrep tree-sitter ruff pyright typescript-language-server
+brew install --cask firefox google-chrome slack telegram whatsapp iterm2 docker spotify itsycal zoom signal paintbrush discord libreoffice calibre vlc qbittorrent
+
+brew tap d12frosted/emacs-plus
+brew install emacs-plus
+cp -a /opt/homebrew/opt/emacs-plus@30/Emacs.app /Applications
 
 # install and link java
 brew install openjdk
@@ -18,7 +22,7 @@ softwareupdate --install-rosetta
 arch -arm64 brew install wkhtmltopdf
 
 git config --global init.defaultBranch main
-git config --global user.name "facundo"
+git config --global user.name "facundoolano"
 git config --global user.email "facundo.olano@gmail.com"
 
 ssh-keygen -t ed25519 -C "facundo.olano@gmail.com"
